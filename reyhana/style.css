@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* commenting out the existing styling for the li element */
+  /* nav li {
+    display: inline-block;
+    padding: 5px;
+  } */
+  
+  nav a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  nav a:hover {
+    color: #cc0066;
+  }
+  
+  .nav-img {
+    width: 10%;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+  }
+  
+  main img {
+    width: 100%;
+  }
+  
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .flex-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* adding a descendent selector to style only the images in the grid class */
+  .grid img {
+    width: 100%;
+  }
+  
+  /* adjusting the grid class again */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* styling the flex class */
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
